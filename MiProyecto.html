@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaGame</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="MiProyecto.css">
+        
+        
+        <script src="MiProyecto.js"></script>
+</head>
+<body id="cuerpo">
+    <div id="titulo"><h1 id="letra">CONSIGUE TU BUTACA - TRES EN RAYA</h1></div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Responde a la Pregunta</h5>
+            </div>
+            <div id="body" class="modal-body"></div>
+            <div id = "envio" class="modal-footer">
+              <button type="button" class="btn btn-primary" id="enviar" onclick="enviarRespuesta()">Enviar respuesta</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row" id="fila1">
+        <div class="col-1"></div>
+        <div id= "butaca1" class="col-1"><img id="1" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca" onclick=""></div>
+        <div id= "butaca2" class="col-1"><img id="2" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca3" class="col-1"><img id="3" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca4" class="col-1"><img id="4" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca5" class="col-1"><img id="5" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca6" class="col-1"><img id="6" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca7" class="col-1"><img id="7" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca8" class="col-1"><img id="8" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca9" class="col-1"><img id="9" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca10" class="col-1"><img id="10" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row" id="fila2">
+        <div class="col-1"></div>
+        <div id= "butaca11" class="col-1"><img id="11" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca12" class="col-1"><img id="12" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca13" class="col-1"><img id="13" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca14" class="col-1"><img id="14" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca15" class="col-1"><img id="15" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca16" class="col-1"><img id="16" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca17" class="col-1"><img id="17" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca18" class="col-1"><img id="18" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca19" class="col-1"><img id="19" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca20"  class="col-1"><img id="20" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row" id="fila3">
+        <div class="col-1"></div>
+        <div id= "butaca21" class="col-1"><img id="21" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca22" class="col-1"><img id="22" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca23" class="col-1"><img id="23" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca24" class="col-1"><img id="24" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca25" class="col-1"><img id="25" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca26" class="col-1"><img id="26" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca27" class="col-1"><img id="27" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca28" class="col-1"><img id="28" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca29" class="col-1"><img id="29" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca30" class="col-1"><img id="30" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row" id="fila4">
+        <div class="col-1"></div>
+        <div id= "butaca31" class="col-1"><img id="31" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca32" class="col-1"><img id="32" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca33" class="col-1"><img id="33" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca34" class="col-1"><img id="34" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca35" class="col-1"><img id="35" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca36" class="col-1"><img id="36" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca37" class="col-1"><img id="37" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca38" class="col-1"><img id="38" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca39" class="col-1"><img id="39" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca40" class="col-1"><img id="40" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row" id="fila5">
+        <div class="col-1"></div>
+        <div id= "butaca41" class="col-1"><img id="41" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca42" class="col-1"><img id="42" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca43" class="col-1"><img id="43" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca44" class="col-1"><img id="44" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca45" class="col-1"><img id="45" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca46" class="col-1"><img id="46" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca47" class="col-1"><img id="47" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca48" class="col-1"><img id="48" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca49" class="col-1"><img id="49" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div id= "butaca50" class="col-1"><img id="50" src="https://th.bing.com/th/id/OIP.fljNd8_rDdSLPwHceE6bGQHaJ_?pid=Api&rs=1" class="butaca"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2"><button type="button" class="btn btn-dark" id="boton1" onclick="lanzarDado('uno')">Lanza el dado</button></div>
+        <div class="col-3"><img src="" class="dado" id="uno"></div>
+        <div class="col-3"><img src="" class="dado" id="dos"></div>
+        <div class="col-2"><button type="button" class="btn btn-danger" id="boton2" onclick="lanzarDado('dos')">Lanza el dado</button></div>
+        <div class="col-1"></div>
+    </div>   
+</body>
+</html>
